@@ -76,6 +76,15 @@ main {
   background: gray;
 }
 
+/*
+  GRID
+  Grid es un tipo de Display que permite manejar
+  un sistema de filas y columnas
+*/
 
+header{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 
 
