@@ -26,7 +26,6 @@ nav {
   padding: 20px;
   /*Radio de los bordes, se lee arriba izquierda, arriba derecha
   abajo izquierda, abajo derecha*/
-  border-radius: 0 0 15px 15px;
 }
 
 /*
@@ -51,6 +50,7 @@ nav div {
 nav div a:visited, nav div a:link {
   color:white;
   text-decoration: none;
+  transition: all 0.5s ease;
 }
 
 .enlace:hover {
@@ -69,6 +69,12 @@ nav div a:visited, nav div a:link {
   }
 */
 
+main{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+}
 /*
   GRID
   Grid es un tipo de Display que permite manejar
@@ -78,9 +84,11 @@ nav div a:visited, nav div a:link {
 header {
   height: 80vh;
   min-height: 80vh;
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 200px;
+  border-radius: 25px;
+  
   /*grid-template-rows: 200px;*/
   /*eje principal*/
   justify-items: center;
@@ -89,10 +97,38 @@ header {
   gap: 20px;
 }
 
+header > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 header > div, header > p {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 5px;
 }
 
+/*aniamcion*/
+
+  .gradient-background {
+  background: linear-gradient(300deg,#ffffff,#009bff,#033fc4);
+  background-size: 180% 180%;
+  animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
