@@ -1,0 +1,21 @@
+/*importa los mixins desde el archivo _mixins.sass*/
+@import "./components/_mixins.sass"
+
+/*
+  esto es un comentario
+
+/*variable
+$principal-color: blue
+$text-color: white
+
+*
+  margin: 0
+  padding: 0
+
+nav
+  background-color: $principal-color
+  @include flex(row, space-between, center, 0px)
+  @include estilo($text-color, 20px, 10px 20px, null)
+  div
+    color: $text-color
+    @include flex(row, center, center, 12px)
