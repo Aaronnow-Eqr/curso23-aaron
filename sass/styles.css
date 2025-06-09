@@ -4,6 +4,23 @@
  * los mixins son funciones que se pueden reutilizar en el código
  * en palabras mas simples, son fragmentos de codigo que se pueden reutilizar
  * en diferentes partes del código */
+/* Operadores lógicos
+ * and (ambas condiciones deben ser verdaderas)
+ * or (al menos una condición debe ser verdadera)
+ * not (la condición debe ser falsa)
+ * Ejemplo:
+ * @if $color == blue and $tamano == 20px
+ *  color: $color
+ *  font-size: $tamano
+ * @else if $color == red or $tamano == 16px
+ *  color: $color
+ *  font-size: $tamano
+ * @else if not($color == green)
+ *  color: black
+ *  font-size: 16px
+ * @else
+ *  color: black
+ *  font-size: 16px */
 /* esto es un comentario */
 /*variable */
 * {
@@ -21,7 +38,6 @@ nav {
   color: white;
   font-size: 20px;
   padding: 10px 20px;
-  margin: 0;
 }
 nav div {
   color: white;
