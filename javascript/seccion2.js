@@ -24,7 +24,8 @@ function saludar(nombre = "amigo") {
 // Llamada a la función con un argumento
 saludar("Juan"); // Esto muestra "¡Hola, Juan!" en la consola
 saludar("María"); // Esto muestra "¡Hola, María!" en la consola
-saludar(); // Esto muestra "¡Hola, Pedro!" en la consola
+saludar("pedro"); // Esto muestra "¡Hola, Pedro!" en la consola
+saludar(); // Esto muestra "¡Hola, amigo!" en la consola (sin argumento)
 
 // Función con multiples parámetros
 function sumar(num1 = 0, num2 = 0) {
