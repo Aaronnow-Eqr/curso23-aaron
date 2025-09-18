@@ -12,16 +12,19 @@
           alert("Por favor, ingrese números válidos.");
           return;
         }
-        if (operacion === "suma") {
+        if (operacion === "suma" || operacion === "+") {
           alert("El resultado de la suma es: " + (num1 + num2));
-        } else if (operacion === "resta") {
+        } else if (operacion === "resta" || operacion === "-") {
           alert("El resultado de la resta es: " + (num1 - num2));
         } else if (
           operacion === "multiplicación" ||
-          operacion === "multiplicacion"
+          operacion === "multiplicacion" ||
+          operacion === "*" || operacion === "x"
         ) {
           alert("El resultado de la multiplicación es: " + num1 * num2);
-        } else if (operacion === "división" || operacion === "division") {
+        } else if (operacion === "división" || 
+          operacion === "division" || 
+          operacion === "/" || operacion === "%") {
           if (num2 !== 0) {
             alert("El resultado de la división es: " + num1 / num2);
           } else {

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body></body>
+<script>
+  function semaforo(color){
+    switch(color){
+      case "1":
+        alert("El semáforo está en verde, puedes pasar");
+        break;
+      case "2":
+        alert("El semáforo está en amarillo, precaución");
+        break;
+      case "3":
+        alert("El semáforo está en rojo, debes detenerte");
+      default:
+        alert("Color no válido, por favor ingresa 1, 2 o 3");
+    }
+  }
+  let colorSemaforo = prompt("Ingrese el color del semáforo (1: verde, 2: amarillo, 3: rojo)").toLowerCase();
+  semaforo(colorSemaforo);
+</script>
+</html>
