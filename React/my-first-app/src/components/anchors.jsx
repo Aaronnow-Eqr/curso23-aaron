@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 function Anchors({href}) {
   return (
     <div>
-      <h2>creado con:</h2>
+      <h2>Creado con las tecnologias:</h2>
       <a href={href} target="_blank">
         <img src={viteLogo} className="logo" alt="Vite logo" />
       </a>
@@ -14,4 +14,5 @@ function Anchors({href}) {
     </div>
   );
 }
-export default Anchors; 
+
+export default Anchors;
