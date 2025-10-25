@@ -22,6 +22,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/state" element={<State />} />
           <Route path="/practica" element={<Practica />} />
           <Route path="/Ref" element={<Ref />} />
+          <Route path="*" element={<p>404 Not Found</p>}/>
         </Routes>
       </BrowserRouter> 
     </ThemeProvider>
